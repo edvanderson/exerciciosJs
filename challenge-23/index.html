@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Challenge 22</title>
+  <style>
+  .container{
+    max-width: 400px;
+background-color: brown;
+  display: block;
+  margin: auto;
+  }
+  .item{
+      display: flex;
+    
+  }
+  button{
+      height: 60px;
+      font-size: 20px;
+  }
+  .num{
+      flex:1;
+  }
+  .operacion{
+   flex:2;   
+  }
+  .display{
+      height: 60px;
+      flex:1;
+      text-align: right;
+      padding: 10px;
+      font-size: 26px;
+      
+  }
+  
+  </style>
+</head>
+<body>
+<div class="container">
+    <div class='item'> 
+       <input type='text' class="display" value='0' date-js="display">
+    </div>
+    <div class='item'>
+            <button class="num" value="ce" date-js="btn-reset">ce</button>
+        <button class="num" value="1" date-js="btn-number">1</button>
+        <button  class="num" date-js="btn-number" value="2">2</button>
+        <button class="operacion" date-js="btn-operation" value="*">*</button>
+    </div>
+    <div class='item'>
+        <button class="num" date-js="btn-number" value="3">3</button>
+        <button class="num" date-js="btn-number" value="4">4</button>
+        <button class="num" date-js="btn-number" value="5">5</button>
+        <button class="operacion" date-js="btn-operation" value="+">+</button></div>
+    <div class='item'>  
+        <button class="num" date-js="btn-number" value="6">6</button>
+        <button class="num" date-js="btn-number" value="7">7</button>
+        <button class="num" date-js="btn-number" value="8">8</button>
+        <button  class="operacion" date-js="btn-operation" value="-">-</button>
+    </div>
+    <div  class='item'> 
+        <button class="num" date-js="btn-number" value="9">9</button>
+        <button class="num" date-js="btn-number" value="0">0</button>
+        <button class="num" disabled></button>
+        <button class="operacion" date-js="btn-operation" value="/">/</button>
+    </div>
+    <div class='item'>
+     <button class="operacion" date-js="btn-igual" value="=">=</button>
+    </div>
+ </div>
+    <script src="challenge-23.js"></script>
+</body>
+</html>
